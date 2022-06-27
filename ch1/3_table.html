@@ -4,21 +4,60 @@
 	<meta charset="uTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>table</title>
+	
+	<style type="text/css">
+		table, th, td{
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		
+		th, td {
+			padding:  10px;
+		}
+	</style>
+	
 </head>
 
 <body>
 
-		<table>
+	<table width="100%">
 			<tr>
-				<td>번호</td>	
-				<td>이름</td>
-				<td>아이디</td>
-			</tr> 
-		</table>
+				<td width="50px">번호</td>	
+				<td width="50px">이름</td>
+				<td width="200px">아이디</td>
+				<td width="200px">주소</td>
+				<td>상세주소</td>
+				<td width="200px">모바일</td>
+			</tr> 		
 			<tr>
 				<td>1</td>	
 				<td>박승준</td>
-				<td>qkrtmdwns0908</td>
+				<td>qkrtmdwns@naver.com</td>
+				<td>경기도 김포시</td>
+				<td width="200px">풍무로 68번길 39 101동 1703호</td>
+				<td width="200px">010-5188-1135</td>
 			</tr>
+		<tbody>
+			<tr>
+				<td>2</td>	
+				<td>박승준</td>
+				<td>qkrtmdwns@naver.com</td>
+				<td>경기도 김포시</td>
+				<td width="200px">풍무로 68번길 39 101동 1703호</td>
+				<td width="200px">010-5188-1135</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td>3</td>	
+				<td>박승준</td>
+				<td>qkrtmdwns@naver.com</td>
+				<td>경기도 김포시</td>
+				<td width="200px">풍무로 68번길 39 101동 1703호</td>
+				<td width="200px">010-5188-1135</td>
+			</tr>
+		</tfoot>
+		
+	</table>	
 </body>
 </HTML>
