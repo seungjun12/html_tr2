@@ -18,9 +18,9 @@
 <body>
 	<form method="get" action="./result.html" id="form">
 	<h4>기본정보</h4>	
-		<table width=80% style="background-color: green" >
+		<table width=100% style="background-color: green" >
 			<tr>
-				<td><center>이름</center></td> 
+				<td width="100px"><center>이름</center></td> 
 				<td style="background-color: white">
 					<input type="text" name="name">
 				</td>
@@ -111,9 +111,9 @@
 			</tr>
 		</table>
 		<h4>작가정보</h4>
-		<table width="80%">
+		<table width="100%">
 			<tr>
-				<td style="background-color:gray"><center>프로필이미지</center></td>
+				<td style="background-color:gray" width="100px"><center>프로필이미지</center></td>
 				<td>
 					<input type="file" name="file" multiple="multiple">
 				</td>
@@ -158,14 +158,14 @@
 			</tr>
 		</table>
 		<br><br><br><center><input type="button" name="storage" value="저장"><input type="button" name="delete" value="취소"></center>	
-		<table>
+		<table width=100%>
 		<br><br>	
 			<tr>
-				<td>소속(회사)</td>
+				<td style="background-color:yellow" width="100px"><center>소속(회사)</center></td>
 				<td><input type="text" name="company"></td>
 			</tr>
 			<tr>
-				<td>사업자등록번호</td>
+				<td style="background-color:yellow"><center>사업자등록번호</center></td>
 				<td>
 					<input type="text" name="number">-
 					<input type="text" name="number">-
@@ -173,16 +173,16 @@
 				</td>
 			</tr>
 			<tr>
-				<td>사업자등록증(첨부)</td>
+				<td style="background-color:yellow;"><center>사업자등록증(첨부)</center></td>
 				<td><input type="file" name="file" multiple="multiple">
 				<br><small style="color:red">소속(회사)의 사업자등록증을 업로드해주시기바랍니다.(이미지 팔일만 업로드 가능/PDF파일 업로드 불가)</small>
 				</td>
 			</tr>		
 		</table>
 		<br><br>
-		<table>
+		<table width=100%>
 			<tr>
-				<td>분야</td>
+				<td style="background-color:yellow;" width="100px"><center>분야</center></td>
 				<td>
 					<input type="checkbox" name="hobby">영화
 					<input type="checkbox" name="hobby1">방송
@@ -195,7 +195,7 @@
 				</td>
 			</tr>
 			<tr>
-				<td>직종</td>
+				<td style="background-color:yellow;"><center>직종</center></td>
 				<td>
 					<input type="radio" name="route">제작자
 					<input type="radio" name="route">투자자
@@ -205,10 +205,16 @@
 				</td>
 			</tr>
 			<tr>
-				<td>주요경력</td>
+				<td style="background-color:yellow;"><center>주요경력</center></td>
 				<td>
 					<small>주요경력사항을 등록해 주시기 바랍니다.</small>
 					<br><small style="color:red">(기간,사업내용,담당업무를 입력해 주시기 바랍니다)</small>
+					<br><input type="date" name="date">~
+					<input type="date" name="date">
+					<input type="text" placeholder="사업내용을 입력해주세요">
+					<input type="text" placeholder="담당업무를 입력해주세요">
+					<input type="button" name="delete" value="삭제">
+					<br><input type="button" name="add" value="추가">
 				</td>
 			</tr>
 			
