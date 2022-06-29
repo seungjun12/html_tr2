@@ -9,15 +9,67 @@
 <body>
 
 	<!-- <form action="./result.html"> -->
-	<!-- <form method="get" action="./result.html"> -->
-	 <form method="post" action="./result.html">  
+	 <form method="get" action="./result.html"> 
+	<!--  <form method="post" action="./result.html"> -->  
 	<!--form 에 3가지 형식 위에 두개는 같은 get방식이고 자료가 기록창에 뛰어진다 반대로 post방식은 자료가 안나오게 한다
 	좋고 나쁘고는 없고 상황에 맞게 사용해야 한다  -->
 	
 		<!-- input태그를 form태그 안에 꼭 넣기 -->
 		<input type="text" name="id" placeholder="아이디" id="id">
-		<input type="text" name="password" placeholder="비밀번호" id="password">
-		<input type="submit">
+		<br><br><input type="text" name="password" placeholder="비밀번호" id="password">
+		
+		
+		<br><br>
+		<select name="gender" id="">
+		<option value"">선택
+		<option value="남자">남자
+		<option value="여자">여자
+		</select>
+		
+		<br><br>
+		<select name="통신사">
+		<option value"SKT">SKT
+		<option value="KT">KT
+		<option value="LGU">LGU
+		<option value="알뜰폰">알뜰폰
+		</select>
+		
+		<br><br>
+		<h5>취미</h5>
+		<input type="checkbox" name="hobby">등산
+		<input type="checkbox" name="hobby1">축구
+		<input type="checkbox" name="hobby2">야구
+		<input type="checkbox" name="hobby3">농구
+		<input type="checkbox" name="hobby4">탁구
+		
+		<br><br>
+		<h5>가입경로</h5>
+		<input type="radio" name="route">신문 
+		<input type="radio" name="route">잡지
+		<input type="radio" name="route">인터넷검색
+		<input type="radio" name="route">지인추천
+		
+		<!-- 	
+  		route를 다 같게 해줘야 된다(두개 이상 선택시 route에 이름을 바꿔준다)
+		ex)
+		<input type="radio" name="route">신문 
+		<input type="radio" name="route">잡지
+		<input type="radio" name="route2">인터넷검색
+		<input type="radio" name="route2">지인추천
+		이렇게 하면 신문 지인추천 두개 선택 가능!
+		 -->
+		 
+		 <br><br>
+		 <textarea rows="10" cols="50" name="contents" placeholder="text"></textarea>
+		 
+		 <!-- 눈에 안보임 -->
+		 <input type="hidden" name="" value="">
+		 
+		 <br><br>
+		 <input type="date">
+		
+		
+		<br><br><input type="submit">
 	
 	</form>
 	
