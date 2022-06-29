@@ -30,7 +30,7 @@
 				<td align="center">아이디</td>
 				<td style="background-color: white">
 					<input type="text" name="id" id="id" autocomplete="on">
-					<input type="button" name="id right" value="아이디중복확인";">
+					<input type="button" name="id right" value="아이디중복확인";" onclick="here();">
 					<br><small style="color:red">6~16자까지 영문자(소문자),숫자 사용 가능합니다</small>				
 				</td>
 			</tr>
@@ -220,7 +220,14 @@
 					<br><input type="button" name="add" value="추가">
 				</td>
 			</tr>
-		</table>	
+		</table>
+		<script type="text/javascript">
+		/*validation*/
+		function here(){
+			/* alert("nickname:" + document.getElementById("nickname").value);*/
+			alert("확인!!");
+		}//here() end
+	</script>	
 	</form>
 </body>
 </HTML>
