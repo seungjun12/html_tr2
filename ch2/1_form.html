@@ -9,7 +9,7 @@
 <body>
 
 	<!-- <form action="./result.html"> -->
-	 <form method="get" action="./result.html"> 
+	 <form method="get" action="./result.html" id="form"> 
 	<!--  <form method="post" action="./result.html"> -->  
 	<!--form 에 3가지 형식 위에 두개는 같은 get방식이고 자료가 기록창에 뛰어진다 반대로 post방식은 자료가 안나오게 한다
 	좋고 나쁘고는 없고 상황에 맞게 사용해야 한다  -->
@@ -63,15 +63,32 @@
 		 <textarea rows="10" cols="50" name="contents" placeholder="text"></textarea>
 		 
 		 <!-- 눈에 안보임 -->
-		 <input type="hidden" name="" value="">
+		 <input type="hidden" name="seq" value="5948594">
 		 
-		 <br><br>
-		 <input type="date">
+		 <br><br><input type="button" id="btnSave" value="전송합니다." onclick="here();">
+		 
 		
 		
-		<br><br><input type="submit">
+		<!-- <br><br><input type="submit"> -->
+	
+	
+	<script type="text/javascript">
+		/*validation*/
+		function here(){
+			/* alert("nickname:" + document.getElementById("nickname").value);*/
+			alert("adfdsf");
+			document.getElementById("form").submit();
+		}//here() end
+	</script>
 	
 	</form>
+	
+	
+		
+		
+		
+		
+	
 	
 </body>
 </HTML>

@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<HTML lang="ko">
+<head>
+	<meta charset="uTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>form_tr</title>
+	<style type="text/css">
+		table, th, td{
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		
+		th, td {
+			padding:  10px;
+		}
+	</style>
+
+</head>
+
+<body>
+	<form method="get" action="./result.html" id="form">
+	<h4>기본정보</h4>	
+		<table width=80% style="background-color: green" >
+			<tr>
+				<td><center>이름</center></td> 
+				<td style="background-color: white"><input type="text"></td>
+			</tr>
+			<tr>
+				<td><center>아이디</center></td>
+				<td style="background-color: white">
+					<input type="text">
+					<input type="button" id="btnSave" value="아이디중복확인" onclick="here();">
+					<br>6~16자까지 영문자(소문자),숫자 사용 가능합니다				
+				</td>
+			</tr>
+			<tr>
+				<td><center>비밀번호</center></td>
+				<td style="background-color: white">
+					<input type="text">
+					<br>6~16자리까지 영문자(대소문자),숫자 및 특수문자 사용 가능합니다
+					<br>3자리 연속 또는 같은 문자, 아이디는 사용하실 수 없습니다
+				</td>
+			</tr>
+			<tr>
+				<td><center>비밀번호 확인</center></td>
+				<td style="background-color: white">
+					<input type="text">
+				</td>
+			</tr>
+			<tr>
+				<td><center>이메일</center></td>
+				<td style="background-color: white">
+					<input type="text">
+					@
+					<input type="text">
+					<select name="email" >
+					<option value="">메일주소선택
+					<option value="naver">naver.com
+					<option value="daum">daum.net
+					<option value="nate">nate.com
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><center>연락처</center></td>
+				<td style="background-color: white">휴대전화
+					<select name="phonenumber">
+						<option value="010">010
+						<option value="011">011
+						<option value="019">019
+						<option value="014">014
+					</select>
+					-
+					<input type="text">
+					-
+					<input type="text">
+					<br>일반전화
+					<select name="normalnumber">
+						<option value="">선택
+						<option value="02">02
+						<option value="032">032
+						<option value="031">031
+					</select>
+					-
+					<input type="text">
+					-
+					<input type="text">
+					<br>연락처는 둘 중 하나만 입력해도 됩니다
+				</td>
+			</tr>
+			<tr>
+				<td><center>우편번호</center></td>
+				<td style="background-color: white"><input type="text">
+				<input type="button" id="btnSave" value="주소검색" onclick="here();">
+				</td>
+			</tr>
+			<tr>
+				<td><center>주소</center></td>
+				<td style="background-color: white">
+				<input type="text">
+				<br><input type="text"> 
+				</td>
+			</tr>
+			<tr>
+				<td><center>정보수신여부</center></td>
+				<td style="background-color: white">
+					서비스 및 이벤트 소식을
+					<input type="radio" name="route">Email로 수신하겠습니다
+					<input type="radio" name="route">SMS로 수신하겠습니다
+				</td>
+			</tr>
+		</table>
+		<h4>작가정보</h4>
+		<table>
+			<tr>
+				<td style="background-color:gray">프로필이미지</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="background-color:gray">필명</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="background-color:gray">대표작</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="background-color:gray">수상내역</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="background-color:gray">주요작품</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="background-color:gray">작가정보공개설정</td>
+				<td></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</HTML>
