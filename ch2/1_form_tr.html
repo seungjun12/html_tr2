@@ -17,9 +17,11 @@
 </head>
 <body>
 <!-- name text 영어로만 -->
-	<form method="get" action="./result.html" id="form">
-	<h4>기본정보</h4>	
-		<table width=80% style="background-color: green" >
+<!-- tr사이에는 공백x -->
+	<form method="get" action="./result.html" id="form" >
+		<!-- h4 한칸 밀려 써야 했음 -->
+		<h4>기본정보</h4>	
+		<table width=80% style="background-color:gray" >
 			<tr>
 				<td width="100px" align="center">이름</td> 
 				<td style="background-color: white">
@@ -177,8 +179,9 @@
 			</tr>
 			<tr>
 				<td style="background-color:gray;"><center>사업자등록증(첨부)</center></td>
-				<td><input type="file" name="file" multiple="multiple">
-				<br><small style="color:red">소속(회사)의 사업자등록증을 업로드해주시기바랍니다.(이미지 팔일만 업로드 가능/PDF파일 업로드 불가)</small>
+				<td>
+					<input type="file" name="file" multiple="multiple">
+					<br><small style="color:red">소속(회사)의 사업자등록증을 업로드해주시기바랍니다.(이미지 팔일만 업로드 가능/PDF파일 업로드 불가)</small>
 				</td>
 			</tr>		
 		</table>
@@ -221,13 +224,13 @@
 				</td>
 			</tr>
 		</table>
-		<script type="text/javascript">
+	</form>
+	<script type="text/javascript">
 		/*validation*/
 		function here(){
 			/* alert("nickname:" + document.getElementById("nickname").value);*/
 			alert("확인!!");
 		}//here() end
 	</script>	
-	</form>
 </body>
 </HTML>
