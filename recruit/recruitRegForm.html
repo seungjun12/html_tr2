@@ -8,6 +8,7 @@
 		table, th, td{
 			border: 1px solid black;
 			border-collapse: collapse;
+			text-align: center;
 		}		
 		th, td {
 			padding:  10px;
@@ -25,14 +26,18 @@
 <body>
 	<h1><center>입사지원서</center></h1>
 	<form action="./recruitList.html" id="idr">	
-		<table width="100%" style="text-align: center;">
+		<table width="100%">
 			<tr>
-				<th width="120px" style="background-color:LightCyan;"><center>지원분야</center></th> <!-- tr>대신 <th>로 바꾸면 글씨 두꺼워짐 -->
-				<td width="120px"></td>																			<!-- 헤더 차트 맨위에 쓰인다고 함 -->
-				<td width="120px" style="background-color:LightCyan;"><center>경력구분</center></td>
-				<td width="120px"><center></center></td>
-				<td width="120px" style="background-color:LightCyan;"><center>희망연봉</center></td>
-				<td width="120px"><center></center></td>
+				<th width="120px" style="background-color:LightCyan;">지원분야</th> <!-- tr>대신 <th>로 바꾸면 글씨 두꺼워짐 -->
+				<td width="120px"><input type="text"></td>																			<!-- 헤더 차트 맨위에 쓰인다고 함 -->
+				<td width="120px" style="background-color:LightCyan;">경력구분</td>
+				<td width="120px"> 
+					<input type="radio" name="extra1">신입
+					<input type="radio" name="extra1">경력 
+					<input type="text" name="extra" placeholder="경력자만 작성">년
+				</td>
+				<td width="120px" style="background-color:LightCyan;">희망연봉</td>
+				<td width="120px"><input type="text">원</td>
 			</tr>
 		</table>
 			<br>
@@ -42,23 +47,45 @@
 			<tr>
 				<td width="140px" rowspan="6" style="color:red ">정장차림의 증명사진 넣으시면 됩니다.단축키 ctrl+N+I</td>
 				<td width="70px" style="background-color:LightCyan;">성명</td>
-				<td width="205px"></td>
+				<td width="205px"><input type="text"></td>
 				<td width="80px" style="background-color:LightCyan;">한문</td>
-				<td width="280px"></td>
+				<td width="280px"><input type="text"></td>
 			</tr>
 			<tr>
 			    <!-- <td></td> -->  
 				<td style="background-color:LightCyan;">영문</td>
-				<td></td>
+				<td><input type="text"></td>
 				<td style="background-color:LightCyan;">생년월일</td>
-				<td></td>
+				<td><input type="date"></td>
 			</tr>
 			<tr>
 				<!-- <td></td> -->
 				<td style="background-color:LightCyan;">전화번호</td>
-				<td></td>
+				<td>
+					<select name="phonenumber">
+						<option value="">선택
+						<option value="010">010
+						<option value="011">011
+						<option value="019">019
+					</select>
+					<span>-</span>
+					<input type="text">
+					<span>-</span>
+					<input type="text">
+				</td>
 				<td style="background-color:LightCyan;">비상연락망</td>
-				<td></td>
+				<td>
+					<select name="phonenumber">
+						<option value="">선택
+						<option value="010">010
+						<option value="011">011
+						<option value="019">019
+					</select>
+					<span>-</span>
+					<input type="text">
+					<span>-</span>
+					<input type="text">
+				</td>
 			</tr>
 			<tr>
 				<!-- <td></td> -->
@@ -179,7 +206,7 @@
 		</table>
 		<br><br><br>
 		<input type="button" name="member" value="등록" id=regis onclick="register()"><br>
-		<input type="button" name="return" value="뒤로가기" id="rebutton" onclick="here()">
+		<input type="button" name="return" value="목록" id="rebutton" onclick="here()">
 		<script type="text/javascript">
 		/*validation*/
 		function here(){

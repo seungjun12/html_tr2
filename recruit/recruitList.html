@@ -25,6 +25,8 @@
 			display: block;
 		}
 		
+	
+		
 		
 		
 		
@@ -37,9 +39,12 @@
 </head>
 
 <body>
-	<h1><center>입사지원서 리스트</center></h1>
+	<h1><center>입사지원서 리스트</center></h1><br>
 	<form action="./recruitRegForm.html" id="id">
-		<table class="bb">
+		<div><textarea rows="3" cols="100" placeholder="검색" ></textarea></div>
+		<input type="button" name="login" value="로그인" style="float: right;">&nbsp;&nbsp;&nbsp; 
+		<input type="button" name="member" value="회원가입" style="float: right;"><br><br><br><br>
+		<table>
 			<tr style="background-color: #2EFEF7"">
 				<th width="40px">번호</th>
 				<th width="60px">이름</th>
@@ -54,7 +59,7 @@
 			</tr>
 			<tr>
 				<td>1</td>
-				<td href="recruitForm.html">김현아</td>
+				<td><a href="recruitView.html">김현아</a></td>
 				<td>880321</td>
 				<td>010-9999-9999</td>
 				<td>서울 서초구 서초대로77길 55 에이프로 스퀘어 3층</td>
