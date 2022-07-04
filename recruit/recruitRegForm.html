@@ -37,7 +37,7 @@
 					<input type="text" name="extra" placeholder="경력자만 작성">년
 				</td>
 				<td width="120px" style="background-color:LightCyan;">희망연봉</td>
-				<td width="120px"><input type="text">원</td>
+				<td width="120px"><input type="text">천원</td>
 			</tr>
 		</table>
 			<br>
@@ -45,10 +45,10 @@
 			<h4>●기본정보</h4>
 		<table width="100%" style="text-align: center">
 			<tr>
-				<td width="140px" rowspan="6" style="color:red ">정장차림의 증명사진 넣으시면 됩니다.단축키 ctrl+N+I</td>
-				<td width="70px" style="background-color:LightCyan;">성명</td>
-				<td width="205px"><input type="text"></td>
-				<td width="80px" style="background-color:LightCyan;">한문</td>
+				<td width="140px" rowspan="6" style="color:red ">정장차림의 증명사진 넣으시면 됩니다.단축키 ctrl+N+I<input type="button" name="find" value="찾기"></td>
+				<td width="50px" style="background-color:LightCyan;">성명</td>
+				<td width="280px"><input type="text"></td>
+				<td width="70px" style="background-color:LightCyan;">한문</td>
 				<td width="280px"><input type="text"></td>
 			</tr>
 			<tr>
@@ -105,7 +105,7 @@
 			<tr>
 				<!-- <td></td> -->
 				<td style="background-color:LightCyan;">취미생활</td>
-				<td colspan="3" style="color:orange; text-align:left; " >선택사항</td>
+				<td colspan="3"><textarea rows="1" cols="100"></textarea></td>
 				<!-- 
 				<td></td>
 				<td></td> --> 
@@ -122,25 +122,33 @@
 				<td width="150px">학과</td>
 				<td width="80px">소재지</td>
 			</tr>
-			<tr style="color:orange; ">
+			<tr>
 				<td>
 					<input type="date">~
 					<input type="date">
 				</td>
 				<td><input type="button" name="sBtn" value="찾기"></td>
-				<td></td>
-				<td></td>
-				<td></td>
+				<td>
+					<input type="radio" name="extra2">재학
+					<input type="radio" name="extra2">휴학
+					<input type="radio" name="extra2">졸업
+				</td>
+				<td><input type="text"></td>
+				<td><input type="text"></</td>
 			</tr>
-			<tr style="color:orange; ">
+			<tr>
 				<td>
 					<input type="date">~
 					<input type="date">
 				</td>
 				<td><input type="button" name="sBtn" value="찾기"></td>
-				<td></td>
-				<td></td>
-				<td></td>
+				<td>
+					<input type="radio" name="extra3">재학
+					<input type="radio" name="extra3">휴학
+					<input type="radio" name="extra3">졸업
+				</td>
+				<td><input type="text"></td>
+				<td><input type="text"></</td>
 			</tr>
 		</table>	
 		<br>
@@ -152,25 +160,28 @@
 				<td width="150px">연수기관</td>
 				<td width="320px">연수과정 및 내용</td>
 			</tr>
-			<tr style="color:orange;">
-				<td></td>
-				<td></td>
-				<td</td>
+			<tr>
+				<td>
+					<input type="date">~
+					<input type="date">
+				</td>
+				<td><input type="text"></td>
+				<td><textarea rows="1" cols="70"></textarea></td>
 			</tr>
 		</table>
 		<br>
 		<br>
 		<h4>●자격사항</h4>		
 		<table width="100%" style="text-align:center; ">
-			<tr>
-				<td width="180px" style="background-color:LightCyan;">취득일</td>
-				<td style="background-color:LightCyan;">종류 및 등급</td>
-				<td style="background-color:LightCyan;">발행처</td>
-				<td width="350px" style="background-color:LightCyan;">보유기술 및 수준</td>
+			<tr style="background-color: LightCyan">
+				<td width="180px">취득일</td>
+				<td>종류 및 등급</td>
+				<td>발행처</td>
+				<td width="350px">보유기술 및 수준</td>
 			</tr>
 			<tr>
-				<td style="color:orange;"></td>
-				<td style="color:orange;"></center></td>
+				<td><input type="date"></td>
+				<td></center></td>
 				<td style="color:orange;"></td>
 				<td></td>
 			</tr>
