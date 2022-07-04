@@ -3,7 +3,7 @@
 <head>
 <meta charset="uTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>3_table_tr3</title>
+	<title>이력서 등록화면</title>
 	<style type="text/css">
 		table, th, td{
 			border: 1px solid black;
@@ -12,161 +12,185 @@
 		th, td {
 			padding:  10px;
 		}
+		
+		#rebutton,#register{
+			width: 50px;
+			margin: auto;
+			display: block;
+			width: 200px;
+		}
+		
 	</style>
 </head>
 <body>
-	<h1><center>입사지원서</center></h1>	
-	<table width="100%" style="text-align: center;">
-		<tr>
-			<th width="120px" style="background-color:LightCyan;"><center>지원분야</center></th> <<!-- tr>대신 <th>로 바꾸면 글씨 두꺼워짐 -->
-			<td width="120px"></td>																			<!-- 헤더 차트 맨위에 쓰인다고 함 -->
-			<td width="120px" style="background-color:LightCyan;"><center>경력구분</center></td>
-			<td width="120px"><center>신입</center></td>
-			<td width="120px" style="background-color:LightCyan;"><center>희망연봉</center></td>
-			<td width="120px"><center>회사 내규에 따름</center></td>
-		</tr>
-	</table>
+	<h1><center>입사지원서</center></h1>
+	<form action="./recruitList.html" id="idr">	
+		<table width="100%" style="text-align: center;">
+			<tr>
+				<th width="120px" style="background-color:LightCyan;"><center>지원분야</center></th> <!-- tr>대신 <th>로 바꾸면 글씨 두꺼워짐 -->
+				<td width="120px"></td>																			<!-- 헤더 차트 맨위에 쓰인다고 함 -->
+				<td width="120px" style="background-color:LightCyan;"><center>경력구분</center></td>
+				<td width="120px"><center>신입</center></td>
+				<td width="120px" style="background-color:LightCyan;"><center>희망연봉</center></td>
+				<td width="120px"><center>회사 내규에 따름</center></td>
+			</tr>
+		</table>
+			<br>
+			<br>	
+			<h4>●기본정보</h4>
+		<table width="100%" style="text-align: center">
+			<tr>
+				<td width="140px" rowspan="6" style="color:red ">정장차림의 증명사진 넣으시면 됩니다.단축키 ctrl+N+I</td>
+				<td width="70px" style="background-color:LightCyan;">성명</td>
+				<td width="205px"></td>
+				<td width="80px" style="background-color:LightCyan;">한문</td>
+				<td width="280px"></td>
+			</tr>
+			<tr>
+			    <!-- <td></td> -->  
+				<td style="background-color:LightCyan;">영문</td>
+				<td></td>
+				<td style="background-color:LightCyan;">생년월일</td>
+				<td></td>
+			</tr>
+			<tr>
+				<!-- <td></td> -->
+				<td style="background-color:LightCyan;">전화번호</td>
+				<td></td>
+				<td style="background-color:LightCyan;">비상연락망</td>
+				<td></td>
+			</tr>
+			<tr>
+				<!-- <td></td> -->
+				<td style="background-color:LightCyan;">전자우편</td>
+				<td></td>
+				<td style="background-color:LightCyan;">나이</td>
+				<td></td>
+			</tr>
+			<tr>
+				<!-- <td></td> -->
+				<td style="background-color:LightCyan;">주소</td>
+				<td colspan="3"></td>
+				<!-- 
+				<td></td>
+				<td></td> -->
+			</tr>
+			<tr>
+				<!-- <td></td> -->
+				<td style="background-color:LightCyan;">취미생활</td>
+				<td colspan="3" style="color:orange; text-align:left; " >선택사항</td>
+				<!-- 
+				<td></td>
+				<td></td> --> 
+			</tr>
+		</table>
+		<br>  
 		<br>
-		<br>	
-		<h4>●기본정보</h4>
-	<table width="100%" style="text-align: center">
-		<tr>
-			<td width="140px" rowspan="6" style="color:red ">정장차림의 증명사진 넣으시면 됩니다.단축키 ctrl+N+I</td>
-			<td width="70px" style="background-color:LightCyan;">성명</td>
-			<td width="205px"></td>
-			<td width="80px" style="background-color:LightCyan;">한문</td>
-			<td width="280px"></td>
-		</tr>
-		<tr>
-		    <!-- <td></td> -->  
-			<td style="background-color:LightCyan;">영문</td>
-			<td></td>
-			<td style="background-color:LightCyan;">생년월일</td>
-			<td></td>
-		</tr>
-		<tr>
-			<!-- <td></td> -->
-			<td style="background-color:LightCyan;">전화번호</td>
-			<td></td>
-			<td style="background-color:LightCyan;">비상연락망</td>
-			<td></td>
-		</tr>
-		<tr>
-			<!-- <td></td> -->
-			<td style="background-color:LightCyan;">전자우편</td>
-			<td></td>
-			<td style="background-color:LightCyan;">나이</td>
-			<td></td>
-		</tr>
-		<tr>
-			<!-- <td></td> -->
-			<td style="background-color:LightCyan;">주소</td>
-			<td colspan="3"></td>
-			<!-- 
-			<td></td>
-			<td></td> -->
-		</tr>
-		<tr>
-			<!-- <td></td> -->
-			<td style="background-color:LightCyan;">취미생활</td>
-			<td colspan="3" style="color:orange; text-align:left; " >선택사항</td>
-			<!-- 
-			<td></td>
-			<td></td> --> 
-		</tr>
-	</table>
-	<br>  
-	<br>
-	<h4> ●학력사항(최신이력이 가장위로)</h4>
-	<table width="100%" style="text-align: center">
-		<tr style="background-color:LightCyan;">
-			<td width="170px">기간</td>
-			<td width="280px"></td>
-			<td width="80px"></td>
-			<td width="150px";"></td>
-			<td width="80px"></td>
-		</tr>
-		<tr style="color:orange; ">
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr style="color:orange; ">
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-	</table>	
-	<br>
-	<br>
-	<h4>●교육연수</h4>
-	<table width="100%" style="text-align:center">
-		<tr style="background-color:LightCyan">
-			<td width="150px"></td>
-			<td width="150px"></td>
-			<td width="320px"></td>
-		</tr>
-		<tr style="color:orange;">
-			<td></td>
-			<td></td>
-			<td</td>
-		</tr>
-	</table>
-	<br>
-	<br>
-	<h4>●자격사항</h4>		
-	<table width="100%" style="text-align:center; ">
-		<tr>
-			<td width="180px" style="background-color:LightCyan;"></td>
-			<td style="background-color:LightCyan;"></td>
-			<td style="background-color:LightCyan;"></td>
-			<td width="350px" style="background-color:LightCyan;"></td>
-		</tr>
-		<tr>
-			<td style="color:orange; "></td>
-			<td style="color:orange; "></center></td>
-			<td style="color:orange; "></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td style="color:orange; "></td>
-			<td style="color:orange; "></td>
-			<td style="color:orange; "></td>
-			<td style="color:orange; "></td>
-		</tr>
-	</table>	
-	<br>
-	<br>
-		<h4>●경력사항(4대 보험 가입 경력)</h4>
-	<table width="100%" style="text-align:center;">
-		<tr>
-			<td width="180px" style="background-color:LightCyan;"></td>
-			<td width="100px" style="background-color:LightCyan;"></td>
-			<td width="100px" style="background-color:LightCyan;"></td>
-			<td style="background-color:LightCyan;"></td>
-		</tr>
+		<h4> ●학력사항(최신이력이 가장위로)</h4>
+		<table width="100%" style="text-align: center">
+			<tr style="background-color:LightCyan;">
+				<td width="170px">기간</td>
+				<td width="280px">출신학교</td>
+				<td width="80px">구분</td>
+				<td width="150px">학과</td>
+				<td width="80px">소재지</td>
+			</tr>
+			<tr style="color:orange; ">
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr style="color:orange; ">
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>	
+		<br>
+		<br>
+		<h4>●교육연수</h4>
+		<table width="100%" style="text-align:center">
+			<tr style="background-color:LightCyan">
+				<td width="150px">연수기간</td>
+				<td width="150px">연수기관</td>
+				<td width="320px">연수과정 및 내용</td>
+			</tr>
+			<tr style="color:orange;">
+				<td></td>
+				<td></td>
+				<td</td>
+			</tr>
+		</table>
+		<br>
+		<br>
+		<h4>●자격사항</h4>		
+		<table width="100%" style="text-align:center; ">
 			<tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
+				<td width="180px" style="background-color:LightCyan;">취득일</td>
+				<td style="background-color:LightCyan;">종류 및 등급</td>
+				<td style="background-color:LightCyan;">발행처</td>
+				<td width="350px" style="background-color:LightCyan;">보유기술 및 수준</td>
+			</tr>
 			<tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
+				<td style="color:orange; "></td>
+				<td style="color:orange; "></center></td>
+				<td style="color:orange; "></td>
+				<td></td>
+			</tr>
 			<tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-	</table>	
+				<td style="color:orange; "></td>
+				<td style="color:orange; "></td>
+				<td style="color:orange; "></td>
+				<td style="color:orange; "></td>
+			</tr>
+		</table>	
+		<br>
+		<br>
+			<h4>●경력사항(4대 보험 가입 경력)</h4>
+		<table width="100%" style="text-align:center;">
+			<tr>
+				<td width="180px" style="background-color:LightCyan;">활동기간</td>
+				<td width="100px" style="background-color:LightCyan;">기관</td>
+				<td width="100px" style="background-color:LightCyan;">담당업무</td>
+				<td style="background-color:LightCyan;">경험 및 습득역량</td>
+			</tr>
+				<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+				<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+				<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+		<br><br><br>
+		<input type="button" name="member" value="등록" id=register onclick="register()"><br><br>
+		<input type="button" name="return" value="뒤로가기" id="rebutton" onclick="here()">
+		<script type="text/javascript">
+		/*validation*/
+		function here(){
+			document.getElementById("idr").submit();
+		}//here() end
+		
+		function register(){
+			alert("등록완료되었습니다");
+			document.getElementById("idr").submit();
+		}//register() end
+		</script>	
+	</form>		
 </body>
 </HTML>
