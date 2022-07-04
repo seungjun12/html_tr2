@@ -30,9 +30,9 @@
 				<th width="120px" style="background-color:LightCyan;"><center>지원분야</center></th> <!-- tr>대신 <th>로 바꾸면 글씨 두꺼워짐 -->
 				<td width="120px"></td>																			<!-- 헤더 차트 맨위에 쓰인다고 함 -->
 				<td width="120px" style="background-color:LightCyan;"><center>경력구분</center></td>
-				<td width="120px"><center>신입</center></td>
+				<td width="120px"><center></center></td>
 				<td width="120px" style="background-color:LightCyan;"><center>희망연봉</center></td>
-				<td width="120px"><center>회사 내규에 따름</center></td>
+				<td width="120px"><center></center></td>
 			</tr>
 		</table>
 			<br>
@@ -136,16 +136,16 @@
 				<td width="350px" style="background-color:LightCyan;">보유기술 및 수준</td>
 			</tr>
 			<tr>
-				<td style="color:orange; "></td>
-				<td style="color:orange; "></center></td>
-				<td style="color:orange; "></td>
+				<td style="color:orange;"></td>
+				<td style="color:orange;"></center></td>
+				<td style="color:orange;"></td>
 				<td></td>
 			</tr>
 			<tr>
-				<td style="color:orange; "></td>
-				<td style="color:orange; "></td>
-				<td style="color:orange; "></td>
-				<td style="color:orange; "></td>
+				<td style="color:orange;"></td>
+				<td style="color:orange;"></td>
+				<td style="color:orange;"></td>
+				<td style="color:orange;"></td>
 			</tr>
 		</table>	
 		<br>
@@ -178,7 +178,7 @@
 			</tr>
 		</table>
 		<br><br><br>
-		<input type="button" name="member" value="등록" id=register onclick="register()"><br><br>
+		<input type="button" name="member" value="등록" id=register onclick="register()"><br>
 		<input type="button" name="return" value="뒤로가기" id="rebutton" onclick="here()">
 		<script type="text/javascript">
 		/*validation*/
@@ -187,7 +187,7 @@
 		}//here() end
 		
 		function register(){
-			alert("등록완료되었습니다");
+			alert("등록 하시겠습니까?");
 			document.getElementById("idr").submit();
 		}//register() end
 		</script>	
