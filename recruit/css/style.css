@@ -16,3 +16,6 @@ th, td {
 			display: block;
 			width: 200px;
 		}	
+#bb:hover{
+	color: red;
+}
