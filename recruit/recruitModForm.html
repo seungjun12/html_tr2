@@ -50,8 +50,8 @@
 		<table>
 			<tr>
 				<td width="140px" rowspan="6" style="color:red ">
-					정장차림의 증명사진 넣으시면 됩니다.단축키 ctrl+N+I
-					<br><br><input type="button" value="파일찾기" onclick="">
+					<img src="image/cute_cat.jpg"; width="300" height="350"><br>
+					<input type="button" value="파일찾기" name="fbtn">
 				</td>
 				<td width="50px" style="background-color:LightCyan;">성명</td>
 				<td width="280px"><input type="text"></td>
@@ -243,13 +243,18 @@
 			</tr>
 		</table>
 		<br><br><br>
-		<input type="button" name="return" value="수정완료" id="rebutton" onclick="here()">
+		<input type="button" name="modify" value="수정완료" id="rebutton" onclick="here()"><br><br>
+		<input type="button" name="back" value="목록" id="rebutton" onclick="there">
 		<script type="text/javascript">
-		/*validation*/
-		function here(){
-			document.getElementById("idr").submit();
-		}//here() end
-
+			function here(){
+				alert("수정하시겠습니까?");
+				document.getElementById("idr").submit();
+			}//here() end
+			
+			function there(){
+				alert("수정취소 하시겠습니까?");
+				document.getElementyById("idr").submit();		
+			}
 		</script>	
 	</form>		
 </body>
