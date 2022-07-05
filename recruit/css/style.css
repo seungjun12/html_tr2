@@ -19,3 +19,22 @@ th, td {
 #bb:hover{
 	color: red;
 }
+
+ul{
+	list-style: none;
+	margin: auto;	
+	/* display: inline-block; */ 
+	text-align: center;
+}
+
+li{
+	list-style: none;
+	margin: auto;
+	display: inline-block;	
+	padding: 20px;
+	cursor: pointer;
+}
+
+li:hover{
+	color: red;
+}
