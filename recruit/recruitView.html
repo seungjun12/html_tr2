@@ -3,7 +3,7 @@
 <head>
 <meta charset="uTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>이력서 상세 화면</title>
+	<title>이력서 등록화면</title>
 	<style type="text/css">
 		table, th, td{
 			border: 1px solid black;
@@ -21,57 +21,87 @@
 			width: 200px;
 		}
 		
+		table{
+			width: 100%;
+		}
+		
 	</style>
 </head>
 <body>
 	<h1><center>입사지원서</center></h1>
 	<form action="./recruitList.html" id="idr">	
-		<table width="100%" style="text-align: center;">
+		<table width="100%">
 			<tr>
-				<th width="120px" style="background-color:LightCyan;"><center>지원분야</center></th> <!-- tr>대신 <th>로 바꾸면 글씨 두꺼워짐 -->
-				<td width="120px">경영</td>																			<!-- 헤더 차트 맨위에 쓰인다고 함 -->
-				<td width="120px" style="background-color:LightCyan;"><center>경력구분</center></td>
-				<td width="120px">신입<center></center></td>
-				<td width="120px" style="background-color:LightCyan;"><center>희망연봉</center></td>
-				<td width="120px">6000만원<center></center></td>
+				<th width="120px" style="background-color:LightCyan;">지원분야</th> <!-- tr>대신 <th>로 바꾸면 글씨 두꺼워짐 -->
+				<td width="120px"><input type="text"></td>																			<!-- 헤더 차트 맨위에 쓰인다고 함 -->
+				<td width="120px" style="background-color:LightCyan;">경력구분</td>
+				<td width="120px"> 
+					<input type="radio" name="extra1">신입
+					<input type="radio" name="extra1">경력 
+					<input type="text" name="extra" placeholder="경력자만 작성">년
+				</td>
+				<td width="120px" style="background-color:LightCyan;">희망연봉</td>
+				<td width="120px"><input type="text">천원</td>
 			</tr>
 		</table>
 			<br>
 			<br>	
 			<h4>●기본정보</h4>
-		<table width="100%" style="text-align: center">
+		<table>
 			<tr>
-				<td width="140px" rowspan="6" style="color:red ">정장차림의 증명사진 넣으시면 됩니다.단축키 ctrl+N+I</td>
-				<td width="70px" style="background-color:LightCyan;">성명</td>
-				<td width="205px">김현아</td>
-				<td width="80px" style="background-color:LightCyan;">한문</td>
-				<td width="280px"></td>
+				<td width="140px" rowspan="6" style="color:red ">정장차림의 증명사진 넣으시면 됩니다.단축키 ctrl+N+I<input type="button" name="find" value="찾기"></td>
+				<td width="50px" style="background-color:LightCyan;">성명</td>
+				<td width="280px"><input type="text"></td>
+				<td width="70px" style="background-color:LightCyan;">한문</td>
+				<td width="280px"><input type="text"></td>
 			</tr>
 			<tr>
 			    <!-- <td></td> -->  
 				<td style="background-color:LightCyan;">영문</td>
-				<td></td>
+				<td><input type="text"></td>
 				<td style="background-color:LightCyan;">생년월일</td>
-				<td>880321</td>
+				<td><input type="date"></td>
 			</tr>
 			<tr>
 				<!-- <td></td> -->
 				<td style="background-color:LightCyan;">전화번호</td>
-				<td>010-9999-9999</td>
+				<td>
+					<select name="phonenumber">
+						<option value="">선택
+						<option value="010">010
+						<option value="011">011
+						<option value="019">019
+					</select>
+					<span>-</span>
+					<input type="text">
+					<span>-</span>
+					<input type="text">
+				</td>
 				<td style="background-color:LightCyan;">비상연락망</td>
-				<td></td>
+				<td>
+					<select name="phonenumber">
+						<option value="">선택
+						<option value="010">010
+						<option value="011">011
+						<option value="019">019
+					</select>
+					<span>-</span>
+					<input type="text">
+					<span>-</span>
+					<input type="text">
+				</td>
 			</tr>
 			<tr>
 				<!-- <td></td> -->
 				<td style="background-color:LightCyan;">전자우편</td>
-				<td></td>
+				<td><input type="button" value="찾기"></td>
 				<td style="background-color:LightCyan;">나이</td>
-				<td>35</td>
+				<td><input type="text">살</td>
 			</tr>
 			<tr>
 				<!-- <td></td> -->
 				<td style="background-color:LightCyan;">주소</td>
-				<td colspan="3">서울 서초구 서초대로77길 55 에이프로 스퀘어 3층</td>
+				<td colspan="3"><textarea rows="1" cols="100"></textarea></td>
 				<!-- 
 				<td></td>
 				<td></td> -->
@@ -79,7 +109,7 @@
 			<tr>
 				<!-- <td></td> -->
 				<td style="background-color:LightCyan;">취미생활</td>
-				<td colspan="3" style="color:orange; text-align:left; " >선택사항</td>
+				<td colspan="3"><textarea rows="1" cols="100"></textarea></td>
 				<!-- 
 				<td></td>
 				<td></td> --> 
@@ -88,7 +118,7 @@
 		<br>  
 		<br>
 		<h4> ●학력사항(최신이력이 가장위로)</h4>
-		<table width="100%" style="text-align: center">
+		<table>
 			<tr style="background-color:LightCyan;">
 				<td width="170px">기간</td>
 				<td width="280px">출신학교</td>
@@ -96,63 +126,86 @@
 				<td width="150px">학과</td>
 				<td width="80px">소재지</td>
 			</tr>
-			<tr style="color:orange; ">
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
+			<tr>
+				<td>
+					<input type="date">~
+					<input type="date">
+				</td>
+				<td><input type="button" name="sBtn" value="찾기"></td>
+				<td>
+					<input type="radio" name="extra2">재학
+					<input type="radio" name="extra2">휴학
+					<input type="radio" name="extra2">졸업
+				</td>
+				<td><input type="text"></td>
+				<td><input type="text"></</td>
 			</tr>
-			<tr style="color:orange; ">
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
+			<tr>
+				<td>
+					<input type="date">~
+					<input type="date">
+				</td>
+				<td><input type="button" name="sBtn" value="찾기"></td>
+				<td>
+					<input type="radio" name="extra3">재학
+					<input type="radio" name="extra3">휴학
+					<input type="radio" name="extra3">졸업
+				</td>
+				<td><input type="text"></td>
+				<td><input type="text"></</td>
 			</tr>
 		</table>	
 		<br>
 		<br>
 		<h4>●교육연수</h4>
-		<table width="100%" style="text-align:center">
+		<table>
 			<tr style="background-color:LightCyan">
 				<td width="150px">연수기간</td>
 				<td width="150px">연수기관</td>
 				<td width="320px">연수과정 및 내용</td>
 			</tr>
-			<tr style="color:orange;">
-				<td></td>
-				<td></td>
-				<td</td>
+			<tr>
+				<td>
+					<input type="date">~
+					<input type="date">
+				</td>
+				<td><input type="text"></td>
+				<td><textarea rows="1" cols="70"></textarea></td>
 			</tr>
 		</table>
 		<br>
 		<br>
 		<h4>●자격사항</h4>		
-		<table width="100%" style="text-align:center; ">
-			<tr>
-				<td width="180px" style="background-color:LightCyan;">취득일</td>
-				<td style="background-color:LightCyan;">종류 및 등급</td>
-				<td style="background-color:LightCyan;">발행처</td>
-				<td width="350px" style="background-color:LightCyan;">보유기술 및 수준</td>
+		<table>
+			<tr style="background-color: LightCyan">
+				<td width="180px">취득일</td>
+				<td>종류 및 등급</td>
+				<td>발행처</td>
+				<td width="350px">보유기술 및 수준</td>
 			</tr>
 			<tr>
-				<td style="color:orange;"></td>
-				<td style="color:orange;"></center></td>
-				<td style="color:orange;"></td>
-				<td></td>
+				<td><input type="date"></td>
+				<td>
+					종류:&nbsp;<input type="text">&nbsp;&nbsp;
+					<input type="text">급
+				</td>
+				<td><input type="text"></td>
+				<td><input type="text"></td>
 			</tr>
 			<tr>
-				<td style="color:orange;"></td>
-				<td style="color:orange;"></td>
-				<td style="color:orange;"></td>
-				<td style="color:orange;"></td>
+				<td><input type="date"></td>
+				<td>
+					종류:&nbsp;<input type="text">&nbsp;&nbsp;
+					<input type="text">급
+				</td>
+				<td><input type="text"></td>
+				<td><input type="text"></td>
 			</tr>
 		</table>	
 		<br>
 		<br>
 			<h4>●경력사항(4대 보험 가입 경력)</h4>
-		<table width="100%" style="text-align:center;">
+		<table>
 			<tr>
 				<td width="180px" style="background-color:LightCyan;">활동기간</td>
 				<td width="100px" style="background-color:LightCyan;">기관</td>
@@ -160,31 +213,38 @@
 				<td style="background-color:LightCyan;">경험 및 습득역량</td>
 			</tr>
 				<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
+				<td><input type="date">~
+					<input type="date">
+				</td>
+				<td><input type="text"></td>
+				<td><input type="text"></td>
+				<td><textarea rows="1" cols="70"></textarea></td>
 			</tr>
 				<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
+				<td>
+					<input type="date">~
+					<input type="date">
+				</td>
+				<td><input type="text"></td>
+				<td><input type="text"></td>
+				<td><textarea rows="1" cols="70"></textarea></td>
 			</tr>
 				<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
+				<td>
+					<input type="date">~
+					<input type="date">
+				</td>
+				<td><input type="text"></td>
+				<td><input type="text"></td>
+				<td><textarea rows="1" cols="70"></textarea></td>
 			</tr>
 		</table>
 		<br><br><br>
-		<input type="button" name="return" value="뒤로가기" id="rebutton" onclick="here()">
+		<input type="button" name="return" value="목록" id="rebutton" onclick="here()">
 		<script type="text/javascript">
-		/*validation*/
-		function here(){
+			function here(){
 			document.getElementById("idr").submit();
-		}//here() end
+			}//here() end
 		</script>	
 	</form>		
 </body>
