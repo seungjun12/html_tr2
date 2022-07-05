@@ -21,15 +21,11 @@
 		<table width="100%">
 			<tr>
 				<th width="120px" style="background-color:LightCyan;">지원분야</th> <!-- tr>대신 <th>로 바꾸면 글씨 두꺼워짐 -->
-				<td width="120px"><input type="text"></td>																			<!-- 헤더 차트 맨위에 쓰인다고 함 -->
+				<td width="120px"><input type="text" placeholder="경영"></td>																			<!-- 헤더 차트 맨위에 쓰인다고 함 -->
 				<td width="120px" style="background-color:LightCyan;">경력구분</td>
-				<td width="120px"> 
-					<input type="radio" name="extra1">신입
-					<input type="radio" name="extra1">경력 
-					<input type="text" name="extra" placeholder="경력자만 작성">년
-				</td>
+				<td width="120px"><input type="text" placeholder="신입"></td>
 				<td width="120px" style="background-color:LightCyan;">희망연봉</td>
-				<td width="120px"><input type="text">천원</td>
+				<td width="120px"><input type="text" placeholder="6000"></td>
 			</tr>
 		</table>
 			<br>
@@ -42,44 +38,34 @@
 					<input type="button" value="파일찾기" name="fbtn">
 				</td>
 				<td width="50px" style="background-color:LightCyan;">성명</td>
-				<td width="280px"><input type="text"></td>
+				<td width="280px"><input type="text" placeholder="김현아"></td>
 				<td width="70px" style="background-color:LightCyan;">한문</td>
-				<td width="280px"><input type="text"></td>
+				<td width="280px"><input type="text" placeholder="金泫娥"></td>
 			</tr>
 			<tr>
 			    <!-- <td></td> -->  
 				<td style="background-color:LightCyan;">영문</td>
-				<td><input type="text"></td>
+				<td><input type="text" placeholder="KimHyanAh"></td>
 				<td style="background-color:LightCyan;">생년월일</td>
-				<td><input type="date"></td>
+				<td><input type="text" placeholder="1988-03-21"></td>
 			</tr>
 			<tr>
 				<!-- <td></td> -->
 				<td style="background-color:LightCyan;">전화번호</td>
 				<td>
-					<select name="phonenumber">
-						<option value="">선택
-						<option value="010">010
-						<option value="011">011
-						<option value="019">019
-					</select>
+					<input type="text" placeholder="010">
 					<span>-</span>
-					<input type="text">
+					<input type="text" placeholder="9999">
 					<span>-</span>
-					<input type="text">
+					<input type="text" placeholder="9999">
 				</td>
 				<td style="background-color:LightCyan;">비상연락망</td>
 				<td>
-					<select name="phonenumber">
-						<option value="">선택
-						<option value="010">010
-						<option value="011">011
-						<option value="019">019
-					</select>
+					<input type="text" placeholder="010">
 					<span>-</span>
-					<input type="text">
+					<input type="text" placeholder="8888">
 					<span>-</span>
-					<input type="text">
+					<input type="text" placeholder="8888">
 				</td>
 			</tr>
 			<tr>
@@ -87,12 +73,15 @@
 				<td style="background-color:LightCyan;">전자우편</td>
 				<td><input type="button" value="찾기"></td>
 				<td style="background-color:LightCyan;">나이</td>
-				<td><input type="text">살</td>
+				<td><input type="text" placeholder="35">살</td>
 			</tr>
 			<tr>
 				<!-- <td></td> -->
 				<td style="background-color:LightCyan;">주소</td>
-				<td colspan="3"><textarea rows="1" cols="100"></textarea></td>
+				<td colspan="3">
+					<textarea rows="1" cols="100" placeholder="서울 서초구 서초대로 77길 55 에이프로스퀘어 3층">
+					</textarea>
+				</td>
 				<!-- 
 				<td></td>
 				<td></td> -->
@@ -100,7 +89,7 @@
 			<tr>
 				<!-- <td></td> -->
 				<td style="background-color:LightCyan;">취미생활</td>
-				<td colspan="3"><textarea rows="1" cols="100"></textarea></td>
+				<td colspan="3"><textarea rows="1" cols="100" placeholder="멍때리기"></textarea></td>
 				<!-- 
 				<td></td>
 				<td></td> --> 
@@ -119,17 +108,12 @@
 			</tr>
 			<tr>
 				<td>
-					<input type="date">~
-					<input type="date">
+					<input type="text" placeholder="2004.02~2007.02">
 				</td>
-				<td><input type="button" name="sBtn" value="찾기"></td>
-				<td>
-					<input type="radio" name="extra2">재학
-					<input type="radio" name="extra2">휴학
-					<input type="radio" name="extra2">졸업
-				</td>
-				<td><input type="text"></td>
-				<td><input type="text"></</td>
+				<td><input type="text" placeholder="가가고등학교"></td>
+				<td><input type="text" placeholder="졸업"></td>
+				<td><input type="text" placeholder="인문계"></td>
+				<td><input type="text" placeholder="서울"></</td>
 			</tr>
 			<tr>
 				<td>
@@ -176,12 +160,9 @@
 			</tr>
 			<tr>
 				<td><input type="date"></td>
-				<td>
-					종류:&nbsp;<input type="text">&nbsp;&nbsp;
-					<input type="text">급
-				</td>
-				<td><input type="text"></td>
-				<td><input type="text"></td>
+				<td><input type="text" placeholder="정보처리기사"></td>
+				<td><input type="text" placeholder="한국산업인력공단"></td>
+				<td><input type="text" placeholder="하"></td>
 			</tr>
 			<tr>
 				<td><input type="date"></td>
