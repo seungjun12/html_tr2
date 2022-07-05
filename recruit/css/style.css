@@ -16,6 +16,8 @@ th, td {
 			display: block;
 			width: 200px;
 			cursor: pointer;
+			background-color: #cbeef0;
+			border-radius: 50px;
 		}	
 #bb:hover{
 	color: red;
@@ -39,3 +41,7 @@ li{
 li:hover{
 	color: red;
 }
+
+
+
+
