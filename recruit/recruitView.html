@@ -14,7 +14,7 @@
 			padding:  10px;
 		}
 		
-		#rebutton,#regis{
+		#rebutton,#modibutton{
 			width: 50px;
 			margin: auto;
 			display: block;
@@ -45,7 +45,9 @@
 			<h4>●기본정보</h4>
 		<table>
 			<tr>
-				<td width="140px" rowspan="6"><img src="image/cute_cat.jpg width=100></td>
+				<td width="140px" rowspan="6">
+					<img src="image/cute_cat.jpg"; width="300" height="350">
+				</td>
 				<td width="50px" style="background-color:LightCyan;">성명</td>
 				<td width="280px">김현아</td>
 				<td width="70px" style="background-color:LightCyan;">한문</td>
@@ -177,13 +179,14 @@
 			</tr>
 				<tr>
 				<td></td>
-				<td>></td>
+				<td></td>
 				<td></td>
 				<td></td>
 			</tr>
 		</table>
 		<br><br><br>
-		<input type="button" name="return" value="목록" id="rebutton" onclick="here()">
+		<input type="button" name="return" value="목록" id="rebutton" onclick="here()"><br><br>
+		<input type="button" name="modify" value="수정" id="modibutton">
 		<script type="text/javascript">
 			function here(){
 			document.getElementById("idr").submit();
