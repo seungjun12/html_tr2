@@ -5,7 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>홈화면</title>
 	<style type="text/css">
-	
 		
 		table, th, td{
 			border: 1px solid black;
@@ -25,19 +24,8 @@
 			display: block;
 		}
 		
-	
-		
-		
-		
-		
 	</style>
-		
-		
-	
-	
-	
 </head>
-
 <body>
 	<h1><center>입사지원서 리스트</center></h1><br>
 	<form action="./recruitRegForm.html" id="id">	
@@ -54,9 +42,9 @@
 				<th width="10px">성별</th>
 				<th width="15px">합/불</th>
 			</tr>
-			<tr>
+			<tr onclick="location.href='recruitView.html'">
 				<td>1</td>
-				<td><a href="recruitView.html">김현아</a></td>
+				<td>김현아</td>
 				<td>880321</td>
 				<td>010-9999-9999</td>
 				<td>서울 서초구 서초대로77길 55 에이프로 스퀘어 3층</td>
@@ -118,20 +106,11 @@
 		<br><br>
 		<input type="button" name="register" value="등록" id="rebutton" onclick="here()">
 		<script type="text/javascript">
-		/*validation*/
-		function here(){
-			/* alert("nickname:" + document.getElementById("nickname").value);*/
-			alert("등록하러갑니다");
-			document.getElementById("id").submit();
-		}//here() end
+			function here(){
+				alert("등록하러갑니다");
+				document.getElementById("id").submit();
+			}//here() end
 		</script>		
-		
-		
-	
 	</form>
-	
-
-
-
 </body>
 </HTML>
