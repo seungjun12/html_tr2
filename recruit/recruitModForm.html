@@ -5,27 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>정보 수정</title>
 	<style type="text/css">
-		table, th, td{
-			border: 1px solid black;
-			border-collapse: collapse;
-			text-align: center;
-		}		
-		th, td {
-			padding:  10px;
-		}
 		
-		#rebutton,#regis{
-			width: 50px;
-			margin: auto;
-			display: block;
-			width: 200px;
-		}
+		
 		
 		table{
 			width: 100%;
 		}
 		
 	</style>
+	<link href="./css/style.css" rel="stylesheet" type="text/css">	
 </head>
 <body>
 	<h1><center>입사지원서</center></h1>
@@ -244,17 +232,12 @@
 		</table>
 		<br><br><br>
 		<input type="button" name="modify" value="수정완료" id="rebutton" onclick="here()"><br><br>
-		<input type="button" name="back" value="목록" id="rebutton" onclick="there">
+		<input type="button" name="back" value="목록" id="rebutton" onclick="location.href='recruitList.html'">
 		<script type="text/javascript">
 			function here(){
 				alert("수정하시겠습니까?");
 				document.getElementById("idr").submit();
 			}//here() end
-			
-			function there(){
-				alert("수정취소 하시겠습니까?");
-				document.getElementyById("idr").submit();		
-			}
 		</script>	
 	</form>		
 </body>

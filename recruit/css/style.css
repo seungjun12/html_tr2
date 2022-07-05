@@ -3,3 +3,18 @@ table, th, td{
 	border-collapse: collapse;
 	text-align: center;
 }
+
+th, td {
+			padding:  10px;
+		}
+
+.bbb:hover{
+			color:#bff0bf;
+		}		
+
+#rebutton,#regis,#modibutton{
+			width: 50px;
+			margin: auto;
+			display: block;
+			width: 200px;
+		}	
