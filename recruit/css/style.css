@@ -42,6 +42,19 @@ li:hover{
 	color: red;
 }
 
+#aaa{
+	font-family: Arial Black,sans-serif;
+	text-shadow: 6px 2px 2px gray;
+	color: black;	
+	text-align: center;
+}
+
+#bbb{
+	text-align: center;	
+}
+
+
+
 
 
 

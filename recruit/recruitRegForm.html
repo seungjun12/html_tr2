@@ -14,7 +14,7 @@
 	<link href="./css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<h1><center>입사지원서</center></h1>
+	<h1 id="bbb">입사지원서</h1>
 	<form action="./recruitList.html" id="idr">	
 		<table width="100%">
 			<tr>
@@ -27,7 +27,7 @@
 					<input type="text" name="extra" placeholder="경력자만 작성">년
 				</td>
 				<td width="120px" style="background-color:LightCyan;">희망연봉</td>
-				<td width="120px"><input type="text">천원</td>
+				<td width="120px"><input type="text"></td>
 			</tr>
 		</table>
 			<br>
@@ -35,9 +35,10 @@
 			<h4>●기본정보</h4>
 		<table>
 			<tr>
-				<td width="140px" rowspan="6" style="color:red ">
-					정장차림의 증명사진 넣으시면 됩니다.단축키 ctrl+N+I
-					<br><br><input type="button" value="파일찾기" onclick="">
+				<td width="120px" rowspan="6" style="color:red ">
+					정장차림의 증명사진 넣으시면 됩니다.<br>
+					단축키 ctrl+N+I
+					<br><br><input type="file" size="10">
 				</td>
 				<td width="50px" style="background-color:LightCyan;">성명</td>
 				<td width="280px"><input type="text" size="5"></td>
@@ -62,9 +63,9 @@
 						<option value="019">019
 					</select>
 					<span>-</span>
-					<input type="text" size="5">
+					<input type="text" size="1">
 					<span>-</span>
-					<input type="text" size="5">
+					<input type="text" size="1">
 				</td>
 				<td style="background-color:LightCyan;">비상연락망</td>
 				<td>
@@ -75,9 +76,9 @@
 						<option value="019">019
 					</select>
 					<span>-</span>
-					<input type="text" size="5">
+					<input type="text" size="1">
 					<span>-</span>
-					<input type="text" size="5">
+					<input type="text" size="1">
 				</td>
 			</tr>
 			<tr>
@@ -85,7 +86,7 @@
 				<td style="background-color:LightCyan;">전자우편</td>
 				<td><input type="button" value="찾기"></td>
 				<td style="background-color:LightCyan;">나이</td>
-				<td><input type="text">살</td>
+				<td><input type="text" size="1">살</td>
 			</tr>
 			<tr>
 				<!-- <td></td> -->
