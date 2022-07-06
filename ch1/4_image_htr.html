@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<HTML lang="ko">
+<head>
+	<meta charset="uTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>image</title>
+</head>
+
+<body>
+	<!-- 상대경로=상대주소 -->
+	<!-- 사진 이용하기 -->
+	<!-- 형식 : <img alt="" src=""> -->
+	<!-- alt 시각 장애인을 위한 부가설명,src가져올 사진 -->
+	
+	<!-- 동일 파일에 있을 경우 -->
+	<img alt="숫자2입니다" src="two.jpg" width="100px">
+	<img alt="숫자2입니다" src="two.jpg" height="100px">
+	<img alt="숫자2입니다" src="two.jpg" width="200px" height="300px">
+	<img alt="숫자2입니다" src="./two.jpg">
+	
+	<!-- 동일 채널에 있을 경우(동등레벨) -->
+	<img alt="숫자3입니다" src="image/3.jpg" width="100">
+	<img alt="숫자3입니다" src="./image/3.jpg">
+	
+	<!-- 상위 채널에 있을 경우 -->
+	<img alt="하늘입니다" src="">
+</body>
+</HTML>
