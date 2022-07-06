@@ -16,10 +16,11 @@
 	}
 	
 	.sub{
-		background-color:#b0b9df ;
-		float: left;	
+		background-color:#262622 ;
+		float: left;	 
 		height: 120px;
 		width: 450px;
+		color: white;
 	}
 	
 		
@@ -43,6 +44,30 @@
 		list-style-type: none;
 	}
 	
+	#main{
+		height: 50px;
+		border-color: gray;
+	}
+	
+	
+	#main_option{
+		padding-top: 50px;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	
+	.sub_main{
+			border: 1px solid white;
+		border-collapse: collapse;
+		}
+	
+	.select{
+		cursor: pointer;
+	}	
+	
+	.main_particular{
+		padding-right: 40px;
+	}
 	
 	
 	
