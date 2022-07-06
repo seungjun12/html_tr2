@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<HTML lang="ko">
+<head>
+	<meta charset="uTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jiwonsu_practice</title>
+	
+	<style type="text/css">
+	
+	
+		/*
+	 		css 표준이 정의한 초기 기본값.(content-box)
+			width와 height 속성이 콘테츠 영역만 포함하고 안팎 여백과 테두리는 포함하지 않습니다. 
+		*/
+		#aa{
+			box-sizing: content-box;
+			background-color: red;
+			width: 300px;
+			height: 150px;
+			margin: 10px;
+			padding: 30px;
+			border: 1px solid gray;
+		}
+		
+		/* 
+	 		width와 height 속성이 안쪽 여백과 테두리는 포함하고, 바깥 여백은 포함하지 않습니다 
+ 		*/
+	
+		#bb{
+			box-sizing: border-box;
+			background-color: blue;
+			width: 300px;
+			height: 150px;
+			margin: 10px;
+			padding: 30px;
+			border: 1px solid gray;
+		}
+	
+	
+	</style>	
+		
+	
+	
+	
+</head>
+
+<body>
+
+	<div id="aa">장원영</div>
+	<div id="bb">전지현</div>
+
+
+</body>
+</HTML>
