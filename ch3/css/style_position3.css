@@ -1,0 +1,48 @@
+.gnb{
+		width: 100%;
+		background-color: gray;
+		height: 50px;
+		margin-top: 50px;
+	}
+	
+	.main{
+		background-color: black;	
+		color:white;
+		width: 220px;
+		height: 150px;
+		float: left;
+		margin-bottom: 500px;
+		padding-bottom: 50px;
+	}
+	
+	.sub{
+		background-color:#b0b9df ;
+		float: left;	
+		height: 120px;
+		width: 450px;
+	}
+	
+		
+	#final{
+		background-color: black;
+		color: white;
+		text-align: center;
+		height: 70px;
+		clear: both;
+	}	
+	
+	li{
+		margin-left: 20px;
+	}
+	
+	h1{
+		text-align: center;
+	}
+	
+	ul{
+		list-style-type: none;
+	}
+	
+	
+	
+	
