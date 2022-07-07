@@ -57,12 +57,13 @@ ul{
 }
 
 .sub_main{
-		border: 1px solid white;
-	border-collapse: collapse;
+	border: 1px solid white;
+	border-collapse: collapse;	
 	}
 
-.select{
+.select:hover{
 	cursor: pointer;
+	color: green;
 }	
 
 .main_particular{
