@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<HTML lang="ko">
+<head>
+	<meta charset="uTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>position5.html</title>
+	<style type="text/css">
+		#aaa{
+			width: 200px;
+			height: 100px;
+			background-color: red;	
+		}
+		
+		#bbb{
+			width: 100px;
+			height: 100px;
+			background-color: blue;
+			/* position: absolute;  */
+			
+			position: relative; /* 위에 있는 #aaa기준으로 바뀐다 ㅋ */
+			top: 50px;
+			left: 50px;
+		}
+		
+		#ccc{
+			width: 100px;
+			height: 100px;
+			background-color: yellow
+		}
+		
+		#ddd{
+			background-color: orange;
+			position: absolute;
+			top: 500px;
+			left: 400px;
+		}
+	</style>
+		
+		
+	
+	
+	
+</head>
+
+<body>
+	<div id="ddd">
+		<div id="aaa">승준</div>
+		<div id="bbb">재현</div>
+		<div id="ccc">현모</div>
+	</div>
+
+
+</body>
+</HTML>

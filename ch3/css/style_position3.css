@@ -1,4 +1,9 @@
-.gnb{
+#wrap{
+	width: 100%;
+}
+
+
+#header{
 		width: 100%;
 		background-color: gray;
 		height: 50px;
@@ -47,6 +52,7 @@ ul{
 #main{
 	height: 50px;
 	border-color: gray;
+	/* width: 10% */
 }
 
 
