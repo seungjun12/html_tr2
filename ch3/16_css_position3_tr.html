@@ -6,36 +6,64 @@
 	<title>position3_tr</title>
 	<style type="text/css">
 		
-		body{
-		height: 100vh;
-		width: 100vw;
-		background-image: url('../image/homepage.jpg');
-		background-repeat: no-repeat;
-		background-size: cover;
+		#wrap{
+			width: 100%;
+		}
+		
+		#header{
+			background-color: gray;
+			height: 80px;
+			width: 100%		
+		}
+
+		li{
+			display: inline-block;
+			width: 150px;
+			padding-right: 15px;
+			padding-top: 30px;
+		}
+		
+		#left{
+			width: 17%;
+			float: left;
+		}
+		
+		table,tr,th,td{
+			border: solid;
+			border-width: 1px;
+			border-collapse: collapse;
+			text-align: center;
+			
+			height: 50px;
+			vertical-align: middle;			
+		}
+		
+		#footer{
+			background-color: black;
+			color: white;
+			clear: both;
+			height: 80px;
+		}
+		
+		p{
+			padding-top: 20px;
 		}
 
 	</style>
-	<link href="./css/style_position3.css" rel="stylesheet" type="text/css">
+
 
 </head>
 
 <body> 
-	<h1 style="margin: 0;">IT아카데미</h1>
-	<div class="gnb">
-		<table id="main";>
-			<th id="main_option">
-				<td class="main_particular">메뉴
-				<td class="main_particular">IT아카데미 소개
-				<td class="main_particular">국비무료교육
-				<td class="main_particular">정규교육
-				<td class="main_particular">취업센터
-				<td class="main_particular">커뮤니티
-				<td><input type="search" name="search" placeholder="검색"></td>
-				<!-- <td><input type="button" value="찾기"></td> -->
-				<td><input type="image" src="../image/search.png" style="padding-top: 5px"></td> 
-		</table>
+<div id="wrap">
+	<div id="header">
+		<ul>
+			<li>HOME
+			<li>서비스관리
+			<li>연계시스템 관리		
+		</ul>
 	</div>
-	<div class="main">
+	<div id="left">
 		<ul>
 			<li>회원 관리
 			<li>사이트 관리
@@ -45,41 +73,50 @@
 			<li>로그 관리
 			<li>통계
 		</ul>
+		<!-- <br> -->
 	</div>
-	<div class="sub">
-		회원관리
-		<table class="sub_main">
+	<div id="contents">
+		<h3>회원관리</h3>
+		<table>
 			<tr>
-				<th class="sub_main">번호</th>
-				<th class="sub_main">이름</th>
-				<th class="sub_main">아이디</th>
-				<th class="sub_main">비밀번호</th>
-				<th class="sub_main">이메일</th>
-				<th class="sub_main">회원수정</th>
+				<td><input type="checkbox"></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
 			</tr>
-			<tr class="select">
-				<td class="sub_main">1</td>
-				<td class="sub_main">김김김</td>
-				<td class="sub_main">kimkim</td>
-				<td class="sub_main">********</td>
-				<td class="sub_main">kim@naver.com</td>
-				<td class="sub_main"></td>
+			<tr>
+				<td><input type="checkbox"></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
 			</tr>
-			<tr class="select">
-				<td class="sub_main">2</td>
-				<td class="sub_main">이이이</td>
-				<td class="sub_main">leelee</td>
-				<td class="sub_main">******</td>
-				<td class="sub_main">lee@naver.com</td>
-				<td class="sub_main"></td>
+			<tr>
+				<td><input type="checkbox"></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
 			</tr>
 		</table>
 	</div>
-	<div id="final">Copy right. 0321-SeungJun
-	<br>경기도 ~~~~ ~~~~ ~~~~
-	<br>010-~~~~-~~~~
+	<div id="footer">
+		<p align="center">Copyright 2022.seungjun</p>
 	</div>
-	
+</div>	
 
 
 
