@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>floatingLabels.html</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+	
+<!-- start -->	
+	
+<!-- 기본 -->
+<div class="form-floating mb-3" style="width: 200px;"  >
+  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+  <label for="floatingInput">Email address</label>
+</div>
+<div class="form-floating" style="width: 200px">
+  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+  <label for="floatingPassword">Password</label>
+</div>
+
+<hr>
+
+<!-- 글자 미리 써놓기(수정화면에 넣으면 좋을거 같아) -->
+<form class="form-floating">
+  <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="test@example.com">
+  <label for="floatingInputValue">Input with value</label>
+</form>
+
+<hr>
+
+<!-- 오류가 났을때 -->
+<form class="form-floating">
+  <input type="email" class="form-control is-invalid" id="floatingInputInvalid" placeholder="name@example.com" value="test@example.com">
+  <label for="floatingInputInvalid">Invalid input</label>
+</form>
+
+<hr>
+
+<!-- textareas 버전 -->
+<div class="form-floating">
+  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+  <label for="floatingTextarea">Comments</label>
+</div>
+
+<hr>
+
+<!-- 선택 -->
+<div class="form-floating">
+  <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+    <option selected>Open this select menu</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+  <label for="floatingSelect">Works with selects</label>
+</div>
+
+<hr>
+
+<!-- readonly 버전이야 -->
+<div class="form-floating mb-3">
+  <input type="email" readonly class="form-control-plaintext" id="floatingEmptyPlaintextInput" placeholder="name@example.com">
+  <label for="floatingEmptyPlaintextInput">Empty input</label>
+</div>
+<div class="form-floating mb-3">
+  <input type="email" readonly class="form-control-plaintext" id="floatingPlaintextInput" placeholder="name@example.com" value="name@example.com">
+  <label for="floatingPlaintextInput">Input with value</label>
+</div>
+
+<hr>
+
+<!-- 레이아웃? -->
+<div class="row g-2">
+  <div class="col-md">
+    <div class="form-floating">
+      <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="mdo@example.com">
+      <label for="floatingInputGrid">Email address</label>
+    </div>
+  </div>
+  <div class="col-md">
+    <div class="form-floating">
+      <select class="form-select" id="floatingSelectGrid">
+        <option selected>Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+      <label for="floatingSelectGrid">Works with selects</label>
+    </div>
+  </div>
+</div>
+
+
+<!-- end -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
