@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap demo</title>
+	<style type="text/css">
+	#header{
+		display: inline-block;
+	}
+	
+	#headerRight{
+		float: right;
+		margin-top: 13px;
+	}
+	
+	.rows{
+		margin-bottom: 10px;
+	}
+	
+	#button{
+		text-align: left;
+		width: 100%;
+	}
+	
+	.check{
+		margin-top: 7px;
+	}
+	
+	</style>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+<!-- 헤더 영역 -->
+<div class="header"> 
+	<h1 id="header">kAIONEX</h1>
+	<b>ABC Management System</b>
+	<div id="headerRight">
+		<div style="display: inline-block;">
+		<i class="fa-solid fa-circle-user headerRight"></i>
+		<span>Tony Chang</span>
+		<span>Adminstrator</span>
+		<button type="button" class="btn btn-light dropdown-toggle headerRight" data-bs-toggle="dropdown" aria-expanded="false">
+	   		언어
+		</button>
+		</div>
+	</div>
+</div>
+<nav class="navbar navbar-expand-lg bg-light">
+	<div class="container-fluid">
+    	<a class="navbar-brand" href="#">Navbar</a>
+    	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      		<span class="navbar-toggler-icon"></span>
+    	</button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      	<ul class="navbar-nav">
+        	<li class="nav-item">
+          		<a class="nav-link active" aria-current="page" href="#">회원관리</a>
+        	</li>
+        	<li class="nav-item">
+          		<a class="nav-link" href="#">서비스관리</a>
+        	</li>
+        	<li class="nav-item">
+          		<a class="nav-link" href="#">사이트관리</a>
+        	</li>
+        	<li class="nav-item">
+          		<a class="nav-link disabled">로그관리</a>
+        	</li>
+        	<li class="nav-item">
+          		<a class="nav-link disabled">시스템관리</a>
+        	</li>
+        	<li class="nav-item">
+          		<a class="nav-link disabled">시스템관리</a>
+        	</li>
+      	</ul>
+    </div>
+  	</div>
+</nav>
+<h2>code</h2>
+<!-- 입력 영역 -->
+<div class="container-fluid">
+	<div class="row rows">
+		<div class="col-6">
+			아이디
+		</div>
+	</div>
+	<div class="row rows">
+		<div class="col-6">
+			<input type="text" class="form-control" id="formGroupExampleInput" placeholder="영문(대소문자),수자,특수문자(),4~20자리 조합">
+		</div>
+	</div>
+	<div class="row rows">
+		<div class="col-6">
+			비밀번호
+		</div>
+		<div class="col">
+			비밀번호 확인
+		</div>
+	</div>
+	<div class="row rows">
+		<div class="col-6">
+			<input type="password" class="form-control" id="formGroupExampleInput" placeholder="영문(대소문자),수자,특수문자(),4~20자리 조합">
+		</div>
+		<div class="col-6">
+			<input type="password" class="form-control" id="formGroupExampleInput">
+		</div>
+	</div>
+	<div class="row rows">
+		<div class="col-6">
+			이름
+		</div>
+		<div class="col">
+			이름 (영문)
+		</div>
+	</div>
+	<div class="row rows">
+		<div class="col-6">
+			<input type="text" class="form-control" id="formGroupExampleInput">
+		</div>
+		<div class="col">
+			<input type="text" class="form-control" id="formGroupExampleInput">
+		</div>
+	</div>
+	<div class="row rows">
+		<div class="col-6">
+			이름
+		</div>
+		<div class="col">
+			성
+		</div>
+	</div>
+	<div class="row rows">
+		<div class="col-6">
+			<input type="text" class="form-control" id="formGroupExampleInput">
+		</div>
+		<div class="col">
+			<input type="text" class="form-control" id="formGroupExampleInput">
+		</div>
+	</div>
+	<div class="row rows">
+		<div class="col-6">
+			이름 (영문)
+		</div>
+		<div class="col">
+			성 (영문)
+		</div>
+	</div>
+	<div class="row rows">
+		<div class="col-6">
+			<input type="text" class="form-control" id="formGroupExampleInput">
+		</div>
+		<div class="col">
+			<input type="text" class="form-control" id="formGroupExampleInput">
+		</div>
+	</div>
+	<div class="row rows">
+		<div class="col-6">
+			성별
+		</div>
+		<div class="col">
+			생일
+		</div>
+	</div>
+	<div class="row rows">
+		<div class="col-6">
+			<div class="dropdown">
+  				<a class="btn btn-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="button">
+					;;선택;;
+  				</a>
+
+  				<ul class="dropdown-menu">
+    				<li><a class="dropdown-item" href="#">Action</a></li>
+			    	<li><a class="dropdown-item" href="#">Another action</a></li>
+			    	<li><a class="dropdown-item" href="#">Something else here</a></li>
+			  	</ul>
+			</div>			
+		</div>
+		<div class="col">
+			<input type="text" class="form-control" id="formGroupExampleInput">
+		</div>
+	</div>
+	<div class="row rows">
+		<div class="col-6">
+			Email
+		</div>
+		<div class="col">
+			이메일 정보 마케팅 사용 동의
+		</div>
+	</div>
+	<div class="row rows">
+		<div class="col-6">
+			<input type="text" class="form-control" id="formGroupExampleInput" placeholder="name@example.com">
+		</div>
+		<div class="col">
+			<div class="form-check check">
+		  		<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+			  	<label class="form-check-label" for="flexCheckDefault">
+			   		동의합니다
+			  	</label>
+			</div>			
+		</div>
+	</div>
+</div>
+	
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/45142342b0.js" crossorigin="anonymous"></script>
+</body>
+</html>
